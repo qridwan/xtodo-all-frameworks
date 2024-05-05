@@ -25,9 +25,9 @@ export const useTodoStore = defineStore('todo', {
       this.todoList = this.todoList.filter((item) => item.id !== id)
       console.log('this.todoList : ', this.todoList)
     },
-    editTodo(id: string, todo: todoType) {
+    editTodo(id: number, todo: todoType) {
       console.log('editTodo: ')
-      this.todoList = this.todoList.map((item) => (item.id.toString() == id ? todo : item))
+      this.todoList = this.todoList.map((item) => (item.id == id ? todo : item))
     }
   }
 })
