@@ -9,16 +9,6 @@ The major focus of this project is to create the same todo application using dif
 
 ## Frontend Frameworks/Libraries to Explore
 
-- React.js (DONE)
-- Angular
-- Vue.js (DONE)
-- Svelte
-- Ember.js
-- Backbone.js
-- Solid.js
-
-## Frontend Frameworks/Libraries to Explore
-
 | Framework   | Status  |
 | ----------- | ------- |
 | React.js    | DONE ✅ |
