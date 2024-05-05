@@ -17,7 +17,7 @@ To install and run the application, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd xtodo-all-frameworks
+   cd xtodo-all-frameworks/react-js/
    ```
 
 3. Install dependencies:
