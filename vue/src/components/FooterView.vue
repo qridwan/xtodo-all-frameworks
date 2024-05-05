@@ -40,8 +40,5 @@
     </footer>
 </template>
 
-<script>
-export default {
-	name: "FooterView"
-}
+<script setup lang="ts">
 </script>

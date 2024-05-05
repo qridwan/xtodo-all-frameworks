@@ -15,16 +15,14 @@
     </div>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
+<script setup lang="ts">
+import {  ref } from "vue";
 import { useTodoStore } from "../stores/todo";
 
-export default defineComponent({
-  name: "AddTodo",
-  setup() {
+
     const store = useTodoStore();
     const content = ref("");
-    const contentError = ref(null);
+    const contentError = ref<string|null>(null);
 
     const clearError = () => {
       contentError.value = null;
@@ -38,14 +36,6 @@ export default defineComponent({
 
       store.addTodo(content.value);
       content.value = "";
+	  clearError();
     };
-
-    return {
-      content,
-      contentError,
-      clearError,
-      add,
-    };
-  },
-});
 </script>

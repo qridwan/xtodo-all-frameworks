@@ -20,28 +20,23 @@
 				🖋️ 
 			</button>
 
-            <!-- <AiOutlineCloseCircle class="close" @click="deleteItem(todo.id)" /> -->
-            <!-- <AiFillEdit class="edit" @click="onEditToggle(todo.id, todo.content)" /> -->
-          </span>
+           </span>
         </li>
       </ul>
     </template>
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { ref, watch } from 'vue';
 import { useTodoStore } from '../stores/todo';
-export default {
-	name: "ListTodo",
-  
-  setup() {
+
     const store = useTodoStore();
     const todoList = ref(store.todoList);
     const isEditing = ref(false);
     const content = ref("");
-    const contentError = ref(null);
-    const todoId = ref("");
+    const contentError = ref("");
+    const todoId = ref(0);
 
 	watch(
       () => store.todoList,
@@ -51,20 +46,20 @@ export default {
     );
 
     const clearError = () => {
-      contentError.value = null;
+      contentError.value = '';
     };
 
-    const onEditToggle = (id, todoContent) => {
+    const onEditToggle = (id: number, todoContent: string) => {
 		console.log('id, content: ', id, todoContent);
       isEditing.value = true;
       todoId.value = id;
       content.value = todoContent;
     };
 
-    const handleChange = (e) => {
-      content.value = e.target.value;
-      contentError.value = null;
-    };
+    // const handleChange = (e) => {
+    //   content.value = e.target.value;
+    //   contentError.value = null;
+    // };
 
     const edit = () => {
       if (!content.value.trim()) {
@@ -75,21 +70,9 @@ export default {
       isEditing.value = false;
     };
 
-    const deleteItem = (id) => {
+    const deleteItem = (id:number) => {
 		store.deleteToDo(id)
     };
 
-    return {
-      todoList,
-      isEditing,
-      content,
-      contentError,
-      clearError,
-      onEditToggle,
-      handleChange,
-      edit,
-      deleteItem,
-    };
-  },
-}
+  
 </script>
