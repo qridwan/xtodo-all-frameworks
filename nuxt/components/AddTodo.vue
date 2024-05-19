@@ -3,7 +3,6 @@
       <h2>What's your plan for today</h2>
       <input
 		v-model="content"
-        value="content"
         name="content"
       />
       <button type="button" class="button" @click="add">

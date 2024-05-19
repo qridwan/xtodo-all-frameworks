@@ -6,16 +6,17 @@ The major focus of this project is to create the same todo application using dif
 | --------- | ------------------------------------------ |
 | React.js  | [REACTJS](https://xtodo-react.vercel.app/) |
 | Vue.js    | [VUE](https://xtodo-vue.vercel.app/)       |
+| Nuxt      | [NUXT](https://xtodo-nuxt.vercel.app/)     |
 
 ## Frontend Frameworks/Libraries to Explore
 
-| Framework   | Status  |
-| ----------- | ------- |
-| React.js    | DONE ✅ |
-| Angular     | TODO ⏳ |
-| Vue.js      | DONE ✅ |
-| Nuxtjs      | TODO ⏳ |
-| Svelte      | TODO ⏳ |
-| Ember.js    | TODO ⏳ |
-| Backbone.js | TODO ⏳ |
-| Solid.js    | TODO ⏳ |
+| Framework   | Status  | Unit Test      |
+| ----------- | ------- | -------------- |
+| React.js    | DONE ✅ | TODO ⏳        |
+| Angular     | TODO ⏳ | TODO ⏳        |
+| Vue.js      | DONE ✅ | TODO ⏳        |
+| Nuxtjs      | DONE ✅ | In-Progress ⏳ |
+| Svelte      | TODO ⏳ | TODO ⏳        |
+| Ember.js    | TODO ⏳ | TODO ⏳        |
+| Backbone.js | TODO ⏳ | TODO ⏳        |
+| Solid.js    | TODO ⏳ | TODO ⏳        |
