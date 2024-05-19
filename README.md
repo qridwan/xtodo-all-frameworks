@@ -14,6 +14,7 @@ The major focus of this project is to create the same todo application using dif
 | React.js    | DONE ✅ |
 | Angular     | TODO ⏳ |
 | Vue.js      | DONE ✅ |
+| Nuxtjs      | TODO ⏳ |
 | Svelte      | TODO ⏳ |
 | Ember.js    | TODO ⏳ |
 | Backbone.js | TODO ⏳ |
